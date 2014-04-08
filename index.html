@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Fastzf2 : 基于ZF2,性能提升70%-80%的php框架" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fastzf2</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yuhaya/FastZF2">View on GitHub</a>
+
+          <h1 id="project_title">Fastzf2</h1>
+          <h2 id="project_tagline">基于ZF2,性能提升70%-80%的php框架</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yuhaya/FastZF2/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yuhaya/FastZF2/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="fastzf2" class="anchor" href="#fastzf2"><span class="octicon octicon-link"></span></a>FastZF2</h3>
+
+<h1></h1>
+
+<h3>
+<a name="%E7%AE%80%E4%BB%8B" class="anchor" href="#%E7%AE%80%E4%BB%8B"><span class="octicon octicon-link"></span></a>简介</h3>
+
+<hr><p>基于ZF2,在classmap做类的自动装载机的基础上任然节省框架<em>70%</em>-<em>80%</em>的运行时间</p>
+
+<h3>
+<a name="%E5%AE%89%E8%A3%85" class="anchor" href="#%E5%AE%89%E8%A3%85"><span class="octicon octicon-link"></span></a>安装</h3>
+
+<hr><h2>
+<a name="using-composer-recommended" class="anchor" href="#using-composer-recommended"><span class="octicon octicon-link"></span></a>Using Composer (recommended)</h2>
+
+<p>The recommended way to get a working copy of this project is to clone the repository
+and use <code>composer</code> to install dependencies using the <code>create-project</code> command:</p>
+
+<pre><code>curl -s https://getcomposer.org/installer | php --
+php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com" zendframework/skeleton-application path/to/install
+</code></pre>
+
+<p>Alternately, clone the repository and manually invoke <code>composer</code> using the shipped
+<code>composer.phar</code>:</p>
+
+<pre><code>cd my/project/dir
+git clone git://github.com/zendframework/ZendSkeletonApplication.git
+cd ZendSkeletonApplication
+php composer.phar self-update
+php composer.phar install
+</code></pre>
+
+<p>(The <code>self-update</code> directive is to ensure you have an up-to-date <code>composer.phar</code>
+available.)</p>
+
+<p>Another alternative for downloading the project is to grab it via <code>curl</code>, and
+then pass it to <code>tar</code>:</p>
+
+<pre><code>cd my/project/dir
+curl -#L https://github.com/zendframework/ZendSkeletonApplication/tarball/master | tar xz --strip-components=1
+</code></pre>
+
+<p>You would then invoke <code>composer</code> to install dependencies per the previous
+example.</p>
+
+<h2>
+<a name="using-git-submodules" class="anchor" href="#using-git-submodules"><span class="octicon octicon-link"></span></a>Using Git submodules</h2>
+
+<p>Alternatively, you can install using native git submodules:</p>
+
+<pre><code>git clone git://github.com/zendframework/ZendSkeletonApplication.git --recursive
+</code></pre>
+
+<h2>
+<a name="web-server-setup" class="anchor" href="#web-server-setup"><span class="octicon octicon-link"></span></a>Web Server Setup</h2>
+
+<h3>
+<a name="php-cli-server" class="anchor" href="#php-cli-server"><span class="octicon octicon-link"></span></a>PHP CLI Server</h3>
+
+<p>The simplest way to get started if you are using PHP 5.4 or above is to start the internal PHP cli-server in the root directory:</p>
+
+<pre><code>php -S 0.0.0.0:8080 -t public/ public/index.php
+</code></pre>
+
+<p>This will start the cli-server on port 8080, and bind it to all network
+interfaces.</p>
+
+<p>**Note: ** The built-in CLI server is <em>for development only</em>.</p>
+
+<h3>
+<a name="apache-setup" class="anchor" href="#apache-setup"><span class="octicon octicon-link"></span></a>Apache Setup</h3>
+
+<p>To setup apache, setup a virtual host to point to the public/ directory of the
+project and you should be ready to go! It should look something like below:</p>
+
+<pre><code>&lt;VirtualHost *:80&gt;
+    ServerName zf2-tutorial.localhost
+    DocumentRoot /path/to/zf2-tutorial/public
+    SetEnv APPLICATION_ENV "development"
+    &lt;Directory /path/to/zf2-tutorial/public&gt;
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fastzf2 maintained by <a href="https://github.com/yuhaya">yuhaya</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
