@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Fastzf2 : 基于ZF2,性能提升70%-80%的php框架" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>Fastzf2</title>
+    <title>Fastzf2 by yuhaya</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>Fastzf2</h1>
+        <h2>基于ZF2,性能提升70%-80%的php框架</h2>
+        <a href="https://github.com/yuhaya/FastZF2" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/yuhaya/FastZF2">View on GitHub</a>
-
-          <h1 id="project_title">Fastzf2</h1>
-          <h2 id="project_tagline">基于ZF2,性能提升70%-80%的php框架</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/yuhaya/FastZF2/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/yuhaya/FastZF2/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="fastzf2" class="anchor" href="#fastzf2"><span class="octicon octicon-link"></span></a>FastZF2</h3>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="fastzf2" class="anchor" href="#fastzf2"><span class="octicon octicon-link"></span></a>FastZF2</h1>
 
 <h1></h1>
 
-<h3>
-<a name="%E7%AE%80%E4%BB%8B" class="anchor" href="#%E7%AE%80%E4%BB%8B"><span class="octicon octicon-link"></span></a>简介</h3>
+<h2>
+<a name="%E7%AE%80%E4%BB%8B" class="anchor" href="#%E7%AE%80%E4%BB%8B"><span class="octicon octicon-link"></span></a>简介</h2>
 
-<hr><p>基于ZF2,在classmap做类的自动装载机的基础上任然节省框架<em>70%</em>-<em>80%</em>的运行时间</p>
+<hr><h3>
+<a name="%E5%9F%BA%E4%BA%8Ezf2x" class="anchor" href="#%E5%9F%BA%E4%BA%8Ezf2x"><span class="octicon octicon-link"></span></a>基于ZF2.x</h3>
+
+<p>基于ZF2.0以上版本</p>
+
+<h3>
+<a name="%E9%9B%86%E6%88%90zf2%E9%AB%98%E9%80%9F%E6%8F%92%E4%BB%B6" class="anchor" href="#%E9%9B%86%E6%88%90zf2%E9%AB%98%E9%80%9F%E6%8F%92%E4%BB%B6"><span class="octicon octicon-link"></span></a>集成ZF2高速插件</h3>
+
+<p>在classmap做类的自动装载机的基础上仍然节省框架初始化过程中的<em>70%</em>-<em>80%</em>运行时间</p>
+
+<h3>
+<a name="%E9%9B%86%E6%88%90zendskeletonapplication%E4%BF%AE%E6%94%B9%E7%89%88" class="anchor" href="#%E9%9B%86%E6%88%90zendskeletonapplication%E4%BF%AE%E6%94%B9%E7%89%88"><span class="octicon octicon-link"></span></a>集成<a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a>修改版</h3>
+
+<p>基于<a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a>官方推荐ZF2应用开发骨架而开发，相比<a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a>能够更加清晰的划分出模型层与控制层，并且优化控制层对模型层的调用，以及模型层的数据操作，表单验证操作，使其更加的简便，加快开发效率</p>
+
+<h3>
+<a name="%E9%9B%86%E6%88%90seajs%E8%A7%84%E8%8C%83%E5%8C%96%E5%89%8D%E5%8F%B0%E5%BC%80%E5%8F%91" class="anchor" href="#%E9%9B%86%E6%88%90seajs%E8%A7%84%E8%8C%83%E5%8C%96%E5%89%8D%E5%8F%B0%E5%BC%80%E5%8F%91"><span class="octicon octicon-link"></span></a>集成<a href="http://seajs.org">sea.js</a>,规范化前台开发</h3>
+
+<p>整合<a href="http://seajs.org">sea.js</a>使得前台开发更加规范，能够使开发人员将重心全部放在业务逻辑的实现上面，并且能够最大限度的达到功能模块的重用效果</p>
 
 <h3>
 <a name="%E5%AE%89%E8%A3%85" class="anchor" href="#%E5%AE%89%E8%A3%85"><span class="octicon octicon-link"></span></a>安装</h3>
 
 <hr>
-      </section>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/yuhaya/FastZF2/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/yuhaya/FastZF2/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/yuhaya/FastZF2"></a> is maintained by <a href="https://github.com/yuhaya">yuhaya</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Fastzf2 maintained by <a href="https://github.com/yuhaya">yuhaya</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
